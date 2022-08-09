@@ -16,4 +16,3 @@ function Book (title, author, pages, read) {
 }
 
 const book = new Book("Pride and Prejudice", "Jane Austin", 150, false);
-console.log(book.info());
