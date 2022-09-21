@@ -1,0 +1,77 @@
+:root {
+    --header-size: 30px;
+    --para-size: 10px;
+    --font: 'Caveat';
+    --font-size: 2em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #FFEEB1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--font-size);
+}
+
+.navBar {
+    background-color: #eff3db;
+    margin: 1em 0;
+    height: 2em;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 90%;
+}
+
+.cataloue {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.cataloue > * {
+    margin: 1.5em 0;
+}
+
+.menuType {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 2fr));
+    row-gap: 2em;
+    column-gap: 1em;
+    padding: 1em;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.menuBtn {
+    height: 6rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    color: blue;
+    background-image: linear-gradient(to bottom right, orange, white, green)
+}
+
+.menuBtn:hover {
+    filter: brightness(80%);
+    transform: scale(1.1);
+}   

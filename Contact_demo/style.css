@@ -1,15 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font);
-}
-
 :root {
     --header-size: 30px;
     --para-size: 10px;
     --font: 'Caveat';
     --font-size: 2em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
 }
 
 html {
