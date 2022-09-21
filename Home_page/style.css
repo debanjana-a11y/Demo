@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --font-size: 2em;
+    --a_height: 80vh solid #F9F9F9;
+    --a_width: 100vw solid transparent;
+    --font: 'Caveat';
+    --transparent_color: rgba(245, 245, 245, 0.4);
+    --text_1: "Welcome to Pandora";
+    --text_2: "Where all Indian cuisines meet";
+}
+
+body {
+    background-image: url('./images/bg_1.jpg');
+    background-position: 20%;
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: var(--font-size);
+}
+
+.navBar {
+    position: absolute;
+    background-color: #eff3db;
+    margin: 1em 0;
+    height: 2em;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 100%;
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    border-bottom: var(--a_height);
+    border-left: var(--a_width);
+    animation: animate 1s ease-in;
+}
+
+@keyframes animate {
+    from {opacity: 0;}
+    to {
+        opacity: 1;
+        transform: translateX(-2px);
+    }
+}
+
+.logos {
+    float: right;
+    margin-top: 50vh;
+    width: 100vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logos > img {
+    height: 200px;
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {rotate: 0deg;}
+    to {rotate: 359deg;}
+}
+
+.welcomeMessage {
+    font-size: 5vmin;
+    font-weight: bold;
+    margin: 1em;
+    vertical-align: top;
+}
+
+.welcomeMessage::before {
+    content: var(--text_1);
+    animation: textChange infinite 5s;
+}
+
+@keyframes textChange {
+    30% {
+        content: var(--text_1);
+        opacity: 0;
+    }
+    31% {
+        content: var(--text_2);
+        opacity: 1;
+    }
+    80% {
+        content: var(--text_2);
+        opacity: 0;
+    }
+    81% {
+        content: var(--text_1);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .welcomeMessage {
+        font-size: 5vmin;
+    }
+}
