@@ -81,8 +81,17 @@ body {
     transform: scale(1.1);
 }   
 
+/********* Go Back *********/
 
-/***************** North Indian Menu Page ******************/
+.upArrow {
+    height: 2em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+/***************** Each Menu Page ******************/
 .menuList {
     width: 100%;
     /* background-color: #673E3E; */
