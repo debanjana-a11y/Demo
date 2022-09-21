@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+:root {
+    --header-size: 30px;
+    --para-size: 10px;
+    --font: 'Caveat';
+    --font-size: 2em;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #FFC83C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews {
+    height: 80%;
+    width: 40%;
+    margin: 5% 10%;
+    font-size: var(--font-size);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.reviewForm {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ED2424;
+    height: 70%;
+    width: 100%;
+}
+
+form > * {
+    margin: 10px 0;
+    font-size: larger;
+    border: none;
+}
+
+input[type='text'] {
+    max-width: 100%;
+    min-width: 60%;
+    height: 1.5em;
+    width: 100%;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 60%;
+    height: 4em;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #2D2222;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 4em;
+}
+
+.contactDetails {
+    height: 80%;
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contactDetails h2, p {
+    font-size: 2em;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.socialMediaPage {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.socialMedia {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.socialMedia > img {
+    height: 3em;
+}
+
+
+@media only screen and (max-width: 750px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .reviewForm {
+        text-align: center;
+    }
+
+    .contactDetails {
+        width: 80%;
+        align-items: center;
+    }
+
+    .contactDetails iframe {
+        width: 80%;
+    }
+
+    .contactDetails p {
+        font-size: 1.2em;
+    }
+
+    .socialMediaPage {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+  }
