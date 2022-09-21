@@ -1,4 +1,4 @@
 # demo
 
 Todo:
-1. Add animatioj effect
+1. Add animation effect
